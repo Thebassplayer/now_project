@@ -102,7 +102,7 @@ function getGeoData() {
         },
         body: JSON.stringify(toDbData),
       };
-      const response = await fetch('database', options);
+      const response = await fetch('/database', options);
       const dbData = await response.json();
       console.log('Database data:', dbData);
     });
@@ -160,7 +160,7 @@ function getUsername(input) {
 
 //! Fetch History data to the database
 async function getData() {
-  const response = await fetch('database');
+  const response = await fetch('/database');
   const data = await response.json();
   console.log('Database response: ', data);
 
