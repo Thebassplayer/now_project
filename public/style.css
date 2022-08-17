@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* align horizontaly */
+  justify-content: center; /* align verticaly */
+  background-color: #f2efe9;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.geo-not {
+  z-index: 1001;
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.map {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* align verticaly */
+  align-items: center; /* align horizontaly */
+}
+
+.in-map {
+  width: 226px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* align verticaly */
+  align-items: center; /* align horizontaly */
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+}
+
+.user-interface-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+#geo-data-container {
+  height: 100%;
+  width: 100%;
+}
+
+.geo-data {
+  font-size: 16px;
+  font-weight: 600;
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+  background-color: transparent;
+  border: 2px solid #1a1a1a;
+  border-radius: 10px;
+  margin: 3px;
+}
+
+.geo-style-1 {
+  color: blueviolet;
+}
+
+.geo-style-2 {
+  color: crimson;
+}
+
+.history-container {
+  display: flex;
+  max-height: 150px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center; /* align horizontaly */
+  justify-content: center; /* align verticaly */
+  background-color: transparent;
+  padding: 3px;
+  margin-bottom: 3px;
+}
+
+.history {
+  display: flex;
+  border: 2px solid #1a1a1a;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  padding: 3px 0;
+  margin: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.history-data-ul {
+  margin: 3px;
+  padding: 3px;
+  list-style-type: none;
+  line-height: 70%;
+}
+
+.btn-area {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1a1a1a;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #1a1a1a;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 3px;
+  width: 80px;
+  height: 64px;
+  outline: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.btn:disabled {
+  pointer-events: none;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #1a1a1a;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.hide {
+  display: none;
+}
+
+.full-window {
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "2.0_server_side_with_nodejs",
+  "version": "1.0.0",
+  "description": "This is the data selfie app by joey lee",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "example",
+    "data"
+  ],
+  "author": "Roy Lopez",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "nedb": "^1.8.0",
+    "node-fetch": "2.6"
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <script src='https://kit.fontawesome.com/9d291e9097.js' crossorigin='anonymous'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.js"
+    integrity="sha512-+tu0+vUXyZX+S51npa//IN6znNTLZsBoy8mXn9WzHxfBqYMy6gOzzfTK0VqZf9O171RY9AJviHDokCnvEq8+1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+
+  <script type="module" src="index.js" defer></script>
+  <title>Track your Selfie</title>
+</head>
+
+<body>
+  <!-- <h1 id="title" class="title">Track your Selfie</h1> -->
+  <div id="geo-not" class="geo-not hide"></div>
+  <div id="container" class="container">
+    <div id="map" class="map full-window">
+      <div id="in map" class="in-map">
+        <div class="user-interface-container">
+          <div id="history-container" class="history-container hide">
+            <div class="history" id="history"></div>
+          </div>
+          <div id="geo-data-container" class="hide">
+            <ul class="geo-data">
+              <li>Weather: <span id="weather" class="geo-style-1"></span><br></li>
+              <li>Temp: <span id="temp" class="geo-style-1"></span><br></li>
+              <li>Lat: <span id="latitude" class="geo-style-1"></span><br></li>
+              <li>Long: <span id="longitude" class="geo-style-1"></span><br></li>
+            </ul>
+          </div>
+
+          <div id="user-name-container" class="user-name hide">
+            <label for="username">Username: </label>
+            <input type="text" id="username">
+          </div>
+          <div class="btn-area">
+            <button id="get-traked-btn" class="btn"><i class="fa-solid fa-location-crosshairs"></i></button>
+            <button id="selfie-btn" class="btn hide">Selfie</button>
+            <button id="save-location-btn" class="btn hide">Save</button>
+            <button id="location-history" class="btn hide">History</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+</body>
+
+</html>
