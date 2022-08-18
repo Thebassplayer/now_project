@@ -1,3 +1,4 @@
 .env
 node_modules/
 database.db
+2.0_server_side_with_nodejs.code-workspace
